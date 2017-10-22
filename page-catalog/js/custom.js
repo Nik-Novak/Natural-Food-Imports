@@ -158,7 +158,10 @@ $(document).ready( function() {
         }
         
         var fpnav = fp.split('/');
-        $('#nav-mastercat').html(fpnav[0]); //coconut
+        var t = fpnav[0].toString();
+        if(t.toLowerCase() == "oliveoil")
+            t="olive oil"
+        $('#nav-mastercat').html(t); //coconut
         $('#nav-cat').html(fpnav[1]); //milk
 //      
         
